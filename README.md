@@ -10,6 +10,12 @@ Built independently using React Native, Expo, and TypeScript.
 
 ---
 
+> **Portfolio Showcase**
+>
+> This is a public showcase of Life Currency, an independently developed React Native application. The production source code is maintained in a private repository.
+
+---
+
 ## Overview
 
 Life Currency transforms everyday activities into visual insights.
@@ -165,13 +171,104 @@ The application will be available through official app stores following approval
 
 ---
 
-## Source Code
+## Source Code & Access
 
-This repository is a public project showcase.
+**Life Currency is a proprietary, independently developed application.**
 
-The production source code is maintained in a private repository.
+This repository serves as a public portfolio showcase and contains project documentation, screenshots, and a demonstration video.
 
-For technical discussions about architecture, implementation decisions, and React Native development, feel free to contact me.
+The complete React Native source code is maintained in a **separate private repository** and is not publicly accessible.
+
+The application is not currently open source.
+
+I am happy to discuss the application's architecture, implementation decisions, technical challenges, and development process during interviews.
+
+**Development status:**
+
+- iOS: Submitted for App Store review.
+
+- Android: Release preparation in progress.
+
+---
+
+## Engineering Decisions
+
+Life Currency was independently designed and developed, with a focus on maintainability, performance, and a consistent mobile user experience.
+
+### Feature-Oriented Architecture
+
+The application follows a modular, feature-oriented architecture rather than organizing the entire codebase by technical layers alone.
+
+Each feature encapsulates its screens, components, and related logic, while reusable UI elements, hooks, and utilities are shared across the application.
+
+**Why this approach?**
+- Keeps features isolated and easier to maintain.
+- Reduces coupling between unrelated parts of the application.
+- Encourages reusable components and consistent UI patterns.
+- Supports incremental development without requiring large-scale restructuring.
+
+### Local-First Data Architecture
+
+SQLite was selected as the primary persistence layer for activity tracking and related user data.
+
+The application does not require users to create accounts or depend on a remote backend for its core functionality.
+
+**Why SQLite?**
+- Enables offline access to locally stored data.
+- Provides structured storage for activities and categories.
+- Supports efficient querying and aggregation for time-based insights.
+- Avoids unnecessary network requests and backend infrastructure.
+
+Database schema changes are managed through versioned migrations.
+
+### Interactive Visualizations
+
+Rather than relying exclusively on standard charts, Life Currency uses custom visual components to represent time allocation and personal progress.
+
+React Native Reanimated supports animated transitions and interactive UI elements.
+
+**Engineering considerations:**
+- Keeping animations responsive without interfering with user interactions.
+- Separating visual presentation from activity data and calculations.
+- Reusing visual components across different screens.
+- Adapting complex layouts to smaller mobile devices.
+
+### Type Safety and Form Validation
+
+TypeScript is used throughout the application to improve maintainability and reduce runtime errors.
+
+React Hook Form and Zod provide structured form handling and validation.
+
+**Why this combination?**
+- Explicit data contracts and predictable form state.
+- Consistent validation rules.
+- Better maintainability as application features evolve.
+- Clearer separation between user input and persistence logic.
+
+### Responsive Mobile UI
+
+The application includes custom layouts, reusable components, and responsive styling using NativeWind.
+
+Special attention was given to:
+- Different iPhone screen sizes.
+- Touch target accessibility and interactive elements.
+- Confirmation dialogs and destructive actions.
+- Consistent spacing, typography, and visual hierarchy.
+
+### Build, Testing & Distribution
+
+The iOS release workflow uses Expo Application Services (EAS), TestFlight, and App Store Connect.
+
+The application has been tested on a physical iPhone and submitted for App Store review.
+
+This process includes:
+- Production build configuration.
+- Build version management.
+- TestFlight distribution.
+- Physical-device testing and UI verification.
+- App Store submission and review communication.
+
+Android distribution is currently being prepared.
 
 ---
 
