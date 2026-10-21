@@ -18,6 +18,38 @@ Instead of focusing exclusively on productivity, the application encourages user
 
 The experience combines activity tracking, interactive visualizations, weekly planning, and personal reflection.
 
+## Screenshots
+
+A preview of the Life Currency mobile experience.
+
+<p align="center">
+
+  <img src="screenshots/01_Your_Universe.png" width="230" alt="Your Universe" />
+
+  <img src="screenshots/02_Track_Activities.png" width="230" alt="Track Activities" />
+
+  <img src="screenshots/03_Time_Patterns.png" width="230" alt="Time Patterns" />
+
+</p>
+
+<p align="center">
+
+  <img src="screenshots/04_Weekly_Intentions.png" width="230" alt="Weekly Intentions" />
+
+  <img src="screenshots/05_Life_Garden.png" width="230" alt="Life Garden" />
+
+  <img src="screenshots/06_Thought_Library.png" width="230" alt="Thought Library" />
+
+</p>
+
+---
+
+## Video Demonstration
+
+[▶ Watch Life Currency Demo](Presentation.mov)
+
+---
+
 ## Key Features
 
 ### Activity Tracking
